@@ -117,7 +117,7 @@ const ActionCards = () => {
           />
         </svg>
       ),
-      title: "Be a business that gives back",
+      title: "Our Financial Model",
       link: "#",
       color: "bg-blue-700",
       hoverColor: "hover:bg-cyan-600",
@@ -174,7 +174,7 @@ const ActionCards = () => {
   ];
 
   return (
-    <div className="bg-white py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div className="bg-white py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto mt-20">
       {/* Heading */}
       <h2 className="text-center text-3xl font-semibold text-gray-800 mb-10">
         Help change lives with safe water

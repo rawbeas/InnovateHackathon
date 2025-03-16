@@ -5,8 +5,12 @@ const Navbar = () => {
     <nav className="bg-white shadow-md w-full">
       <div className="max-w-full mx-auto px-4 py-2 flex items-center">
         {/* Logo - Left side */}
-        <a href="/" className="flex items-center space-x-2">
-          <span className="text-3xl font-bold text-bold text-blue-600">
+        <a
+          href="/"
+          className="flex items-center space-x-2 hover:scale-105 hover:shadow-md transition duration-300 pr-2"
+        >
+          <img src="../public/Logo.jpeg" alt="Water.org" className="h-15 " />
+          <span className="text-4xl font-bold text-bold  text-blue-600">
             S.A.F
           </span>
         </a>
@@ -39,7 +43,7 @@ const Navbar = () => {
           </a>
           <a
             href="#"
-            className="text-xl bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
+            className="text-xl bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 hover:scale-105 hover:shadow-md transition duration-300"
           >
             Sign Up
           </a>

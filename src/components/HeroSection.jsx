@@ -5,8 +5,12 @@ const HeroSection = () => {
 
   // Texts to display in the bottom bar
   const texts = [
-    "Change the life of a family every month.",
-    "Your support makes a difference.",
+    "The Yamuna is India's longest tributary, spanning 1,376 km.",
+    "Yamuna supplies about 70% of Delhi's water",
+    "Faces severe pollution from untreated sewage and industrial waste.",
+    "Highly revered in Hinduism, with its confluence with the Ganges at Prayagraj being a sacred site.",
+    "Major tributaries include the Chambal, Sindh, Betwa, and Ken.",
+    "Covers a vast area across several states, including Uttarakhand, Haryana, and Uttar Pradesh.",
   ];
 
   // Function to handle text change
@@ -15,7 +19,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="relative h-screen">
+    <div className="relative h-screen ">
       {/* Video Background */}
       <video
         autoplay=""
@@ -28,16 +32,15 @@ const HeroSection = () => {
 
       {/* Hero Content */}
       <div className="absolute top-0 left-0 w-full h-full flex items-start justify-start text-white px-6">
-        <div className="max-w-lg text-left mt-20">
-          <h1 className="text-4xl py-2 md:text-7xl font-bold mb-4">
-            Safe water protects and saves lives
+        <div className="max-w-lg text-left mt-6">
+          <h1 className="text-4xl py-2 md:text-8xl font-bold mb-4">
+            Revitalize Yamuna, Revitalize Life.
           </h1>
-          <p className="text-lg  md:text-3xl mb-6">
-            Water.org has helped empower more than 76 million people with access
-            to safe water or sanitation.
+          <p className="text-lg  md:text-4xl mb-6">
+            S.A.F Drones: Flying Towards a Cleaner Yamuna.
           </p>
-          <button className="bg-blue-600 px-6 py-3 rounded-md text-white font-medium hover:bg-blue-700">
-            Donate
+          <button className="bg-blue-600 px-6 py-3 rounded-md text-white font-medium hover:bg-blue-700 hover:scale-105 hover:shadow-md transition duration-300">
+            Get Started
           </button>
         </div>
       </div>

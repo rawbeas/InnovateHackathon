@@ -3,35 +3,34 @@ import React from "react";
 const FeatureSection = () => {
   const features = [
     {
-      image:
-        "https://water.org/media/images/Waterorg_Homepage_Img-5_aImN98V.format-webp_VG5RoQd.webp",
-      title: "Our founders: Matt Damon and Gary White",
+      image: "../public/Logo1.png",
+      title: "Public Complaint System",
       description:
-        "Fifteen years ago, Matt and Gary worked independently to help break down barriers between people in need and access to safe water. A common goal to pioneer smart solutions to the water crisis brought them together, and their combined water and sanitation expertise and star-power have allowed Water.org to grow into a leader in the water and sanitation sector.",
+        "The Public Complaint System provides a user-friendly web form where individuals can report pollution-related issues by filling in required details such as their name, contact information, location pin (to specify the affected area), and a description of the problem. These complaints are integrated into a government dashboard, where they are prioritized based on urgency to ensure timely action on critical issues. This system is significant as it empowers citizens to actively participate in environmental monitoring, enabling them to hold authorities accountable and contribute to addressing pollution concerns effectively.",
       link: {
-        text: "Meet our team",
+        text: "Learn more",
         url: "#",
       },
     },
     {
       image:
         "https://water.org/media/images/Waterorg_Homepage_Img-6.format-webp_Io1pN8o.webp",
-      title: "Highest rankings from charity watch dogs",
+      title: "Smart Boat Drone",
       description:
-        "Water.org has received the highest rating from Charity Navigator for more than 10 years, demonstrating our commitment to transparency and financial accountability.",
+        "The Smart Boat Drone is designed to collect real-time environmental data, including pH levels, turbidity (water clarity), and GPS coordinates, enabling precise monitoring of water quality across various locations in the Yamuna River. Using a machine learning model, it classifies zones into three categories: Safe Zone (Green) for acceptable water quality, Warning Zone (Yellow) for moderate pollution requiring attention, and Critical Zone (Red) for severe pollution demanding urgent intervention. This system ensures continuous and automated assessment of water health, empowering authorities to make proactive and informed decisions to address pollution effectively.",
       link: {
-        text: "See our financials",
+        text: "Learn more",
         url: "#",
       },
     },
     {
       image:
         "https://water.org/media/images/Waterorg_Homepage_Img-7_3aqvQpy.format-webp_AzhhVXy.webp",
-      title: "Partnering to solve the water crisis",
+      title: "Real Time Tracking",
       description:
-        "We are fortunate to work with partners – corporations, financial institutions, and foundations – who share our passion and vision. Together, we are changing lives with safe water on 4 continents around the world.",
+        "The Live Pollution Map utilizes Folium, a Python library, to create an interactive visualization of pollution levels across different zones of the Yamuna River, allowing users to easily identify safe, warning, and critical areas. The map is dynamically updated with data collected by the Smart Boat Drone and other sensors, ensuring that the displayed information accurately reflects the current state of pollution in real-time. This tool is highly useful for researchers, policymakers, and citizens to monitor pollution trends and plan effective interventions to address environmental challenges.",
       link: {
-        text: "Learn about partnerships",
+        text: "Learn more",
         url: "#",
       },
     },
@@ -40,44 +39,50 @@ const FeatureSection = () => {
   return (
     <>
       {/* first part */}
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 mt-30">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side with image and $5 overlay */}
           <div className="relative">
             <img
-              src="https://water.org/media/images/Waterorg_Homepage_Img-3_5V2HZOt.format-webp_Y9mGMcu.webp"
+              src="../public/Map.jpg"
               alt="Person pouring clean water"
               className="w-full rounded-lg"
             />
-            <div className="absolute top-0 left-0 w-48 h-48 md:w-64 md:h-64 bg-blue-400 rounded-full flex flex-col items-center justify-center text-white">
-              <span className="text-6xl md:text-7xl font-bold">$5</span>
+            <div className="absolute top-0 left-0 w-48 h-48 md:w-74 md:h-74 bg-blue-400 rounded-full flex flex-col items-center justify-center text-white opacity-75">
+              <span className="text-6xl md:text-5xl font-bold">20+Centers</span>
               <div className="w-3/4 h-px bg-white my-2"></div>
               <p className="text-center text-sm md:text-base px-4">
-                $5 helps empower someone in need with lasting access to safe
-                water
+                Real-time surveillance tracks pollution, enabling data-driven
+                sustainable strategies effectively.
               </p>
             </div>
           </div>
 
           {/* Right side content */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              Your donation is a powerful catalyst
+            <h2 className="text-3xl md:text-6xl font-bold text-gray-800 mb-6">
+              Real Time Analysis
             </h2>
 
             <p className="text-gray-600 mb-6">
-              Together with our 179 partners around the world, we've helped
-              mobilize more than $6.6 billion in capital to support small loans
-              that bring access to safe water and sanitation to millions of
-              people in need. By supporting Water.org, you are part of a
-              solution that reaches more people, faster and more efficiently.
+              The IoT-enabled boat drones collect real-time water quality data,
+              including pH levels, turbidity, dissolved oxygen, and
+              contaminants. This data is immediately sent to the cloud for
+              processing. From the cloud, the data is fetched by a computing
+              center, where it is fed into a machine learning model (CatBoost
+              Classifier). The model analyzes the data and classifies river
+              zones into categories such as Clean, Moderate, Polluted, or Highly
+              Polluted. The classified zones, along with GPS coordinates, are
+              visualized on an interactive map using the Folium library. This
+              enables authorities and users to monitor pollution hotspots in
+              real-time and take actionable steps for river cleanup.
             </p>
 
             <a
               href="#"
               className="text-blue-600 hover:text-blue-800 inline-flex items-center font-medium"
             >
-              Learn about our smart solutions
+              Learn about our Mapping system
               <svg
                 className="ml-1 w-5 h-5"
                 fill="none"
@@ -99,12 +104,12 @@ const FeatureSection = () => {
 
       {/* second part */}
 
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 mt-20">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
           {/* Left image */}
           <div className="lg:col-span-1 flex justify-center items-center">
             <img
-              src="https://ucarecdn.com/21eea803-b3e9-4d91-9f17-978687bad2f5/-/resize/1032x/-/format/auto/"
+              src="../public/Drone.jpeg"
               alt="People managing finances for water access"
               className="w-full h-[350px] object-cover rounded-lg shadow-md"
             />
@@ -112,26 +117,28 @@ const FeatureSection = () => {
 
           {/* Center content */}
           <div className="lg:col-span-1">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">
-              There's a smart way to end the water crisis
+            <h2 className="text-4xl font-bold  text-gray-800 mb-6">
+              INTRODUCING S.A.F
             </h2>
 
             <p className="text-gray-600 mb-4">
-              For millions around the world, access to funds stands between them
-              and safe water and sanitation in their homes.
+              For millions of people, polluted rivers stand between them and
+              clean water, affecting their health and environment.
             </p>
 
             <p className="text-gray-600 mb-4">
-              That's where Water.org comes in. Water.org offers smart solutions
-              that break down the barriers between people living in poverty and
-              access to safe water and sanitation.
+              That's where S.A.F (Surveillance Against Filth) drones come in.
+              These innovative drones are equipped with custom 3D-printed hulls,
+              advanced LiDAR sensors for depth mapping, and proximity sensors to
+              dodge debris. Powered by solar panels for 12-hour missions, they
+              perform live turbidity and pH analysis, mapping river zones into
+              Green, Yellow, and Red categories using Folium.
             </p>
 
             <p className="text-gray-600 mb-6">
-              Our solutions are working! Today more than 76 million people
-              around the world can turn on a tap or safely use a toilet because
-              small, affordable loans empowered them to get access to safe water
-              or sanitation.
+              Our solution is efficient! S.A.F drones are 40% cheaper than
+              traditional drones and scalable for fleet deployment, making river
+              cleanup smarter, faster, and more affordable.
             </p>
 
             <a
@@ -159,7 +166,7 @@ const FeatureSection = () => {
           {/* Right image */}
           <div className="lg:col-span-1 flex justify-center items-center">
             <img
-              src="https://media.istockphoto.com/id/1040455046/photo/middle-age-man-drinking-a-glass-of-water-with-a-happy-face-standing-and-smiling-with-a.jpg?s=612x612&w=0&k=20&c=0wCAapRCP9MOuScTo4JO2l4VpZZOtWW4_Tuc3IO5Q4w="
+              src="https://images.indianexpress.com/2015/05/yamuna-pollution-main.jpg"
               alt="Woman with access to clean water"
               className="w-full h-[350px] object-cover rounded-lg shadow-md"
             />
@@ -169,18 +176,18 @@ const FeatureSection = () => {
 
       {/* third part */}
 
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 mt-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col">
-              <div className="mb-6">
+              <div className="mb-6 ">
                 <img
                   src={feature.image}
                   alt={feature.title}
                   className="w-full h-64 object-cover rounded-md"
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">
+              <h3 className="text-3xl  font-bold text-gray-800 mb-3">
                 {feature.title}
               </h3>
               <p className="text-gray-600 mb-4 flex-grow">
