@@ -146,7 +146,7 @@ const Footer = () => {
         {/* Logo and Copyright */}
         <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-start md:items-center">
           <div className="mb-4 md:mb-0">
-            <img src="../public/Logo.jpeg" alt="Water.org" className="h-20" />
+            <img src="./Logo.jpeg" alt="Water.org" className="h-20" />
           </div>
           <div className="text-gray-600 text-sm">
             <p>©2025 SAF</p>

@@ -9,7 +9,7 @@ const Navbar = () => {
           href="/"
           className="flex items-center space-x-2 hover:scale-105 hover:shadow-md transition duration-300 pr-2"
         >
-          <img src="../public/Logo.jpeg" alt="Water.org" className="h-15 " />
+          <img src="./Logo.jpeg" alt="Water.org" className="h-15 " />
           <span className="text-4xl font-bold text-bold  text-blue-600">
             S.A.F
           </span>
