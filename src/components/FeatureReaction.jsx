@@ -1,12 +1,15 @@
 import React from "react";
-
+import { IoIosAlert } from "react-icons/io";
+import { GiDeliveryDrone } from "react-icons/gi";
+import { FaMapMarkedAlt } from "react-icons/fa";
 const FeatureSection = () => {
   const features = [
     {
       image: "../public/Logo1.png",
+      icon: <IoIosAlert className="size-[200px] text-blue-600" />,
       title: "Public Complaint System",
       description:
-        "The Public Complaint System provides a user-friendly web form where individuals can report pollution-related issues by filling in required details such as their name, contact information, location pin (to specify the affected area), and a description of the problem. These complaints are integrated into a government dashboard, where they are prioritized based on urgency to ensure timely action on critical issues. This system is significant as it empowers citizens to actively participate in environmental monitoring, enabling them to hold authorities accountable and contribute to addressing pollution concerns effectively.",
+        "Report pollution issues via a web form. Complaints are integrated into a government dashboard and prioritized based on urgency, empowering citizens to participate in environmental monitoring.",
       link: {
         text: "Learn more",
         url: "#",
@@ -15,9 +18,10 @@ const FeatureSection = () => {
     {
       image:
         "https://water.org/media/images/Waterorg_Homepage_Img-6.format-webp_Io1pN8o.webp",
+      icon: <GiDeliveryDrone className="size-[200px] text-blue-600" />,
       title: "Smart Boat Drone",
       description:
-        "The Smart Boat Drone is designed to collect real-time environmental data, including pH levels, turbidity (water clarity), and GPS coordinates, enabling precise monitoring of water quality across various locations in the Yamuna River. Using a machine learning model, it classifies zones into three categories: Safe Zone (Green) for acceptable water quality, Warning Zone (Yellow) for moderate pollution requiring attention, and Critical Zone (Red) for severe pollution demanding urgent intervention. This system ensures continuous and automated assessment of water health, empowering authorities to make proactive and informed decisions to address pollution effectively.",
+        "Collects real-time water quality data, classifying zones into Safe, Warning, and Critical categories. Enables continuous assessment and informed decisions to address pollution.",
       link: {
         text: "Learn more",
         url: "#",
@@ -26,9 +30,10 @@ const FeatureSection = () => {
     {
       image:
         "https://water.org/media/images/Waterorg_Homepage_Img-7_3aqvQpy.format-webp_AzhhVXy.webp",
+      icon: <FaMapMarkedAlt className="size-[200px] text-blue-600" />,
       title: "Real Time Tracking",
       description:
-        "The Live Pollution Map utilizes Folium, a Python library, to create an interactive visualization of pollution levels across different zones of the Yamuna River, allowing users to easily identify safe, warning, and critical areas. The map is dynamically updated with data collected by the Smart Boat Drone and other sensors, ensuring that the displayed information accurately reflects the current state of pollution in real-time. This tool is highly useful for researchers, policymakers, and citizens to monitor pollution trends and plan effective interventions to address environmental challenges.",
+        "Interactive map visualizes pollution levels in real-time using data from drones and sensors. Useful for monitoring trends and planning interventions.",
       link: {
         text: "Learn more",
         url: "#",
@@ -42,14 +47,15 @@ const FeatureSection = () => {
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 mt-30">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side with image and $5 overlay */}
-          <div className="relative">
+          <div className="relative group">
+            
             <img
-              src="../public/Map.jpg"
+              src="./Map.jpg"
               alt="Person pouring clean water"
-              className="w-full rounded-lg"
+              className="w-full rounded-lg hover:shadow-xl hover:scale-110 transition duration-300"
             />
             <div className="absolute top-0 left-0 w-48 h-48 md:w-74 md:h-74 bg-blue-400 rounded-full flex flex-col items-center justify-center text-white opacity-75">
-              <span className="text-6xl md:text-5xl font-bold">20+Centers</span>
+              <span className="md:text-6xl  font-bold">20+Centers</span>
               <div className="w-3/4 h-px bg-white my-2"></div>
               <p className="text-center text-sm md:text-base px-4">
                 Real-time surveillance tracks pollution, enabling data-driven
@@ -109,9 +115,9 @@ const FeatureSection = () => {
           {/* Left image */}
           <div className="lg:col-span-1 flex justify-center items-center">
             <img
-              src="../public/Drone.jpeg"
+              src="./Drone.jpeg"
               alt="People managing finances for water access"
-              className="w-full h-[350px] object-cover rounded-lg shadow-md"
+              className="w-full h-[350px] object-cover shadow-md rounded-lg hover:shadow-xl hover:scale-110 transition duration-300 "
             />
           </div>
 
@@ -168,7 +174,7 @@ const FeatureSection = () => {
             <img
               src="https://images.indianexpress.com/2015/05/yamuna-pollution-main.jpg"
               alt="Woman with access to clean water"
-              className="w-full h-[350px] object-cover rounded-lg shadow-md"
+              className="w-full h-[350px] object-cover rounded-lg shadow-md rounded-lg hover:shadow-xl hover:scale-110 transition duration-300"
             />
           </div>
         </div>
@@ -179,15 +185,16 @@ const FeatureSection = () => {
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 mt-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {features.map((feature, index) => (
-            <div key={index} className="flex flex-col">
-              <div className="mb-6 ">
-                <img
+            <div key={index} className="flex flex-col p-4 hover:p-8 hover:scale-120 hover:mx-6 border  hover:border-blue-500 rounded-3xl  transition-all duration-700 shadow-sm hover:shadow-2xl">
+              <div className="mb-6 flex justify-center ">
+                {feature.icon}
+                {/* <img
                   src={feature.image}
                   alt={feature.title}
                   className="w-full h-64 object-cover rounded-md"
-                />
+                /> */}
               </div>
-              <h3 className="text-3xl  font-bold text-gray-800 mb-3">
+              <h3 className="text-3xl  text-center font-bold text-gray-800 mb-3">
                 {feature.title}
               </h3>
               <p className="text-gray-600 mb-4 flex-grow">
