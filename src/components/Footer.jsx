@@ -1,44 +1,27 @@
 import React from "react";
 
+const FooterLink = ({ href, children }) => (
+  <li>
+    <a href={href} className="text-gray-600 hover:text-blue-600">
+      {children}
+    </a>
+  </li>
+);
+
 const Footer = () => {
   return (
     <footer className="bg-gray-100 py-12 px-4 mt-30 ">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="md:max-w-8xl p-4 mx-auto">
+        <div className=" w-full grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Column 1 */}
           <div>
             <h3 className="font-medium text-gray-800 mb-4">Make an Impact</h3>
             <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  Donate
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  Give Monthly
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  Start a Fundraiser
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  Ways to Donate
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  Cause Marketing
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  Shop to Support
-                </a>
-              </li>
+              <FooterLink href="#">Donate</FooterLink>
+              <FooterLink href="#">Give Monthly</FooterLink>
+              <FooterLink href="#">Start a Fundraiser</FooterLink>
+              <FooterLink href="#">Ways to Donate</FooterLink>
+            
             </ul>
           </div>
 
@@ -46,110 +29,26 @@ const Footer = () => {
           <div>
             <h3 className="font-medium text-gray-800 mb-4">Get to Know Us</h3>
             <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  Our Impact
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  Our Team
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  The Water Crisis
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  Partners
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  Financials
-                </a>
-              </li>
+              <FooterLink href="#">About Us</FooterLink>
+              <FooterLink href="#">Our Impact</FooterLink>
+              <FooterLink href="#">Our Team</FooterLink>
+              
+              <FooterLink href="#">Partners</FooterLink>
+
             </ul>
           </div>
 
-          {/* Column 3 */}
-          <div>
-            <h3 className="font-medium text-gray-800 mb-4">Solutions</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  WaterCredit
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  Global Engagement
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  Monitoring & Insights
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  Knowledge Library
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  WaterEquity
-                </a>
-              </li>
-            </ul>
-          </div>
+        
 
           {/* Column 4 */}
           <div>
             <h3 className="font-medium text-gray-800 mb-4">Contact Us</h3>
             <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  News & Press
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  Resources
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  FAQs
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  Terms of Use
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-blue-600">
-                  Cookies Settings
-                </a>
-              </li>
+              <FooterLink href="#">Careers</FooterLink>
+              <FooterLink href="#">News & Press</FooterLink>
+              <FooterLink href="#">Resources</FooterLink>
+              <FooterLink href="#">FAQs</FooterLink>
+        
             </ul>
 
             {/* Social Media Icons */}
@@ -250,9 +149,8 @@ const Footer = () => {
             <img src="../public/Logo.jpeg" alt="Water.org" className="h-20" />
           </div>
           <div className="text-gray-600 text-sm">
-            <p>©2025 Water.org</p>
-            <p>501(c)(3) non-profit organization</p>
-            <p>EIN: 58-2060131</p>
+            <p>©2025 SAF</p>
+
           </div>
         </div>
       </div>

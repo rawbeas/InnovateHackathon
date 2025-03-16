@@ -55,7 +55,7 @@ const FeatureSection = () => {
               className="w-full rounded-lg hover:shadow-xl hover:scale-110 transition duration-300"
             />
             <div className="absolute top-0 left-0 w-48 h-48 md:w-74 md:h-74 bg-blue-400 rounded-full flex flex-col items-center justify-center text-white opacity-75">
-              <span className="md:text-6xl  font-bold">20+Centers</span>
+              <span className="md:text-5xl text-md  font-bold">20+Centers</span>
               <div className="w-3/4 h-px bg-white my-2"></div>
               <p className="text-center text-sm md:text-base px-4">
                 Real-time surveillance tracks pollution, enabling data-driven
