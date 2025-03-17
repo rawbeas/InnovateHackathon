@@ -8,11 +8,11 @@ import FeatureSection from "../components/FeatureReaction";
 const Main = () => {
   return (
     <>
-      <Navbar />
+
       <HeroSection />
       <FeatureSection />
       <ActionCards />
-      <Footer />
+      
     </>
   );
 };

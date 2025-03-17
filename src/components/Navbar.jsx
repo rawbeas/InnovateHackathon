@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md w-full">
       <div className="max-w-full mx-auto px-4 py-2 flex items-center">
-        {/* Logo - Left side */}
+    
         <a
           href="/"
           className="flex items-center space-x-2 hover:scale-105 hover:shadow-md transition duration-300 pr-2"
@@ -15,7 +15,7 @@ const Navbar = () => {
           </span>
         </a>
 
-        {/* Navigation Links  */}
+       
         <div className="hidden md:flex space-x-10 ml-auto">
           <a
             href="#"
